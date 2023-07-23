@@ -17,18 +17,33 @@
     justify-content: space-between;
 }
 
-
 .footer .contact{
     margin-left: 25px;
 }
 
-.rights{
+.footer-other-info{
     margin-top: 60px;
+}
+
+.text-item, .text-item a{
     color: #6C6C6C;
 }
 
-@media(max-width: 500px){
+.text-item:not(:first-child){
+    margin-top: 15px;
+    color: #6C6C6C;
+}
+
+@media(max-width: 550px){
     .footer .contact{
         margin-left: 5px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+    } 
+
+    .footer-left{
+        margin-top: 20px;
     }
 }

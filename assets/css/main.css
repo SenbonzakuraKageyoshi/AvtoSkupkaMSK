@@ -19,6 +19,14 @@
     font-family: 'Inter';
 }
 
+.socials-list{
+    display: flex;
+}
+
+.socials-list li:not(:first-child){
+    margin-left: 5px;
+}
+
 .flex-content{
     display: flex;
     align-items: center;
