@@ -25,10 +25,6 @@
     margin-top: 60px;
 }
 
-.text-item, .text-item a{
-    color: #6C6C6C;
-}
-
 .text-item:not(:first-child){
     margin-top: 15px;
     color: #6C6C6C;

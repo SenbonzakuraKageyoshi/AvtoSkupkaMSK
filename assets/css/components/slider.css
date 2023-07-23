@@ -1,6 +1,7 @@
 .swiper{
-    width: 796px;
-    height: 365px;
+    width: 550px;
+    min-height: 300px;
+    margin-top: 40px;
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
@@ -10,16 +11,24 @@
     color: var(--yellow);
 }
 
+.review__author{
+    display: flex;
+    color: var(--yellow);
+}
+
+.review__text{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.review__author p:last-child{
+    margin-left: 5px;
+}
+
 @media(max-width: 1100px){
     .swiper{
         width: 550px;
         height: 280px;
-    }
-
-    .swiper img{
-        width: 550px;
-        height: 280px;
-        object-fit: contain;
     }
 }
 
