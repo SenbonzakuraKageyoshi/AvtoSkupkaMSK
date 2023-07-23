@@ -1,0 +1,117 @@
+@import './vendors/normalize.css';
+@import './vendors/typography.css';
+@import './vendors/vars.css';
+
+@import './components/header.css';
+@import './components/form.css';
+@import './components/slider.css';
+@import './components/footer.css';
+
+@import './sections/section-top.css';
+@import './sections/section-stages.css';
+@import './sections/section-call.css';
+@import './sections/section-documents.css';
+@import './sections/section-buyout.css';
+@import './sections/section-about.css';
+@import './sections/section-form.css';
+
+*{
+    font-family: 'Inter';
+}
+
+.flex-content{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.telephone{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: var(--black);
+}
+
+.section-title{
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+}
+
+section:not(.section-top){
+    padding: 70px 0px;
+}
+
+body{
+    background: #F9F9F9;
+}
+
+.form-anchor{
+    background-color: var(--yellow);
+    width: 212px;
+    height: 64px;
+    margin-top: 12px;
+    border-radius: 24px;
+    transition: background-color 0.4s;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-anchor:hover{
+    background-color: var(--yellow-hover);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html.locked{
+    overflow-y: hidden;
+}
+
+@media(max-width: 1100px){
+    .section-title{
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: -0.03em;
+    }
+
+    section:not(.section-top){
+        padding: 45px 0px;
+    }
+}
+
+@media(max-width: 768px){
+    .section-title{
+        font-size: 26px;
+        line-height: 29px;
+        letter-spacing: -0.03em;
+    }
+
+    section:not(.section-top){
+        padding: 25px 0px;
+    }
+}
+
+@media(max-width: 500px){
+    .telephone{
+        font-size: 16px;
+    }
+}

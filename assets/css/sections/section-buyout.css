@@ -1,0 +1,64 @@
+.section-buyout__list__item{
+    display: flex;
+    align-items: center;
+    width: 542px;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+.section-buyout__list__item-main{
+    margin-left: 20px;
+}
+
+.section-buyout__list__item__title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    border-bottom: 2px solid #C8C8C8;
+    display: inline;
+}
+
+.section-buyout__list__item__descr{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    margin-top: 12px;
+    color: #747474;
+}
+
+.section-buyout__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -32px;
+    margin-top: 10px;
+}
+
+@media(max-width: 560px){
+    .section-buyout__list__item{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-buyout__list__item__title{
+        font-size: 20px;
+        line-height: 21px;
+    }
+
+    .section-buyout__list__item__descr{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .section-buyout__list__item-main{
+        margin-left: 0;
+        width: 300px;
+    }
+
+    .section-buyout__list__item img{
+        width: 300px;
+        height: 239px;
+    }
+}
