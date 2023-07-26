@@ -135,7 +135,7 @@
                             <p class="section-top-list__item__descr">92% клиентов планировали продать за ту же цену которую предложили мы</p>
                        </div>
                     </li>
-                    <li class="section-top-list__item">
+                    <!-- <li class="section-top-list__item">
                         <div class="section-top-list__item-image-wrapper">
                             <img src="./assets/images/svg/advantage3.svg" alt="Преимущество" width="32" height="31" loading="lazy">
                         </div>
@@ -143,7 +143,7 @@
                             <h4 class="section-top-list__item__name">100% юридическая прозрачность</h4>
                             <p class="section-top-list__item__descr">Договор купли-продажи, учет в ГИБДД, копия ПТС с отметкой о новом владельце</p>
                        </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="section-top-left">
@@ -209,7 +209,7 @@
                         <div class="section-stages-list__item__time">5 минут</div>
                     </div>
                     <div class="section-stages-list__item__title">Получение выплаты</div>
-                    <p class="section-stages-list__item__descr">Вы получите максимальную выплату за свое авто в течение суток.</p>
+                    <p class="section-stages-list__item__descr">Вы получите максимальную выплату за свое авто</p>
                 </li>
             </ul>
         </div>
@@ -270,7 +270,7 @@
                         <link itemprop="url" href="https://avtoskupka-msk.ru/">
                     </h2>
                     <div class="review__author">
-                        <p itemprop="name">Марк</p>
+                        <p itemprop="name" itemprop="author">Марк</p>
                         <p itemprop="familyName">Кудрявцев</p>
                     </div>
                     <p class="review__text" itemprop="reviewBody">
@@ -288,6 +288,7 @@
                         </p>
                     </div>
                     <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                        <meta itemprop="ratingValue" content="5"/>
                         <meta itemprop="bestRating" content="5"/>
                     </div>
                 </div>
@@ -335,14 +336,6 @@
                             <img src="./assets/images/svg/doc4.svg" alt="Паспорт" width="60" height="80" loading="lazy">
                             <div class="section-documents-list__item-main">
                                 <h2 class="section-documents-list__item__title">Паспорт владельца автомобиля</h2>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="section-documents-list__item">
-                        <div class="section-documents-list__item-wrapper">
-                            <img src="./assets/images/svg/doc5.svg" alt="Сервисная книжка" width="60" height="80" loading="lazy">
-                            <div class="section-documents-list__item-main">
-                                <h2 class="section-documents-list__item__title">Сервисная книжка</h2>
                             </div>
                         </div>
                     </li>
@@ -484,13 +477,22 @@
     {
         "@context" : "http://schema.org",
         "@type" : "Organization",
+        "telephone": "89935659909",
+        "image": [
+            "https://example.com/photos/webp/top-car.webp"
+        ],
         "name" : "AvtoSkupkaMSK»",
         "url" : "https://avtoskupka-msk.ru/",
         "sameAs" : [
         "https://wa.me/+79203357518",
         "https://viber.click/79203357518",
         "https://t.me/GennadiyRashkevih"
-        ]
+        ],
+        "address" : {
+            "@type": "PostalAddress",
+            "addressLocality": "Москва",
+            "streetAddress": "Мичуринский проспект 34"
+        }
     }
 </script>
 </html>
